@@ -1,11 +1,12 @@
 @media (max-width: 1150px) {
     body {
-        height: 1300px;
+        width: 100%;
         display: block;
     }
     .container {
         width: 750px;
         display: block;
+        margin: 0 auto;
     }
     .main__left {
         margin: 0 auto;
@@ -23,12 +24,11 @@
 
 @media (max-width: 800px) {
     body {
-        width: 610px;
         height: 1260px;
         margin: 0 auto;
     }
     .container {
-        width: 600px;
+        width: 100%;
         margin: 0 auto;
     }
     .main__left {
@@ -120,7 +120,7 @@
     }   
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 401px) {
     body {
         width: 600px;
         height: 1260px;
@@ -135,7 +135,6 @@
 
 @media (max-width: 400px) {
     body {
-        width: 400px;
         height: 1490px;
         display: block;
     }
@@ -147,12 +146,15 @@
     .main__left {
         margin: 0 auto;
         margin-top: 10px;
-        width: 290px;
+        width: 350px;
+        &-info {
+            padding-left: 85px;
+        }
     }
     .main__right {
         margin: 0 auto;
         margin-top: 20px;
-        width: 290px;
+        width: 350px;
         height: 850px;
         &-common-wrapper {
             display: flex;
@@ -174,20 +176,20 @@
         }
         &-about {
             margin-left: 22px;
-            font-size: 20px;
+            font-size: 23px;
             &::after {
                 height: 3px;
-                bottom: -1px;
+                bottom: -5px;
             }
         }
         &-descr {
             margin-left: 22px;
             margin-top: 15px;
-            width: 250px; 
+            width: 270px; 
             font-size: 12px;
         }
         &-skills {
-            padding-left: 22px;
+            padding-left: 0px;
             padding-top: 26px;
             height: 1000px;
         }
@@ -196,15 +198,18 @@
             margin-top: -10px;
         }
         &-doing {
-            font-size: 16px;
+            font-size: 18px;
+            margin-left: 22px;
         }
         &-blocks {
             width: 230px;
             height: 108px;
+            margin: 0 auto;
             margin-top: 24px;
             padding-top: 5px;
             &:nth-child(2n) {
-                margin-left: 0px;
+                margin: 0 auto;
+                margin-top: 20px;
             }
             &:hover {
                 box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
@@ -228,7 +233,7 @@
         }   
         &-portfolio {
             margin-top: 74px;
-            padding-left: 22px;
+            padding-left: 0px;
             padding-top: 26px;
             height: 1000px;
             &-wrapper {
@@ -239,18 +244,20 @@
             &-blocks {
                 width: 230px;
                 height: 108px;
+                margin: 0 auto;
                 margin-top: 19px;
-                &:hover {
-                  .main__right-portfolio-blocks-hide {
-                    opacity: .6;
-                  }
-                  .main__right-portfolio-blocks-descr {
-                    opacity: 1;
-                    top: 50%;
-                  }
-                }
                 &:nth-child(2n) {
                   margin-left: 0px;
+                  margin: 0 auto;
+                  margin-top: 19px;
+                }
+                &-hide {
+                    opacity: 0.4;
+                }
+                &-descr {
+                    opacity: 1;
+                    top: 50%;
+                    font-size: 13px;
                 }
             }
         }
