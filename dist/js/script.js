@@ -8,7 +8,6 @@ arrowBtn.addEventListener('click', () => {
     wrap2.classList.toggle('active-wrap-2');
 });
 
-
 socialLinks.forEach(item => {
     item.addEventListener('mouseover', () => {
         socialLinks.forEach(item => {
