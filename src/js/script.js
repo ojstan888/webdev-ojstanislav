@@ -6,6 +6,7 @@ const socialLinks = document.querySelectorAll('.social-links');
 arrowBtn.addEventListener('click', () => {
     wrap1.classList.toggle('active-wrap-1');
     wrap2.classList.toggle('active-wrap-2');
+    arrowBtn.classList.toggle("open");
 });
 
 socialLinks.forEach(item => {
@@ -22,4 +23,6 @@ socialLinks.forEach(item => {
     });
 });
 
+
+arrowBtn.click()
 
